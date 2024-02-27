@@ -21,7 +21,8 @@ const searchFunction = async () => {
       const url = `/pages/info.html?planet=${planetName}&number=${planetId}`;
       window.location.href = url;
     } else {
-      alert("Attans... Vi verkar inte hitta någon planet med det namnet :(")
+    // Search not found
+    alert("ingen planet hittad");
     }
   } catch (error) {
     console.error("Error fetching data:", error);

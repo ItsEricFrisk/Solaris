@@ -8,14 +8,13 @@ async function getKey() {
   try {
     const response = await fetch(keyUrl, {
       method: "POST",
-      headers: { "Content-Type": "application/json" }
+      headers: {'x-zocom': key },
     });
     const data = await response.json();
     key = data.key;
     return key;
   } catch (error) {
     console.error("Error fetching key: ", error);
-    throw error;
   }
 }
 
@@ -33,8 +32,6 @@ async function getData() {
     console.error("Error fetching data: ", error);
   }
 }
-
-getData();
 
 //Exports the data from the api to index.js and info.js
 export { getData };

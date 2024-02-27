@@ -9,21 +9,28 @@ const button = document.getElementById("search-field__button");
 // Search function to get data from search input
 const searchFunction = async () => {
   try {
+    // Fetching data from the api
     const data = await getData();
+
+    // Converting searcg unput to uppcase
     const search = searchInput.value.toUpperCase();
+
+    // Filtering data based on search input
     const searchData = data.bodies.filter((body) =>
       body.name.toUpperCase().includes(search)
     );
 
+    // Redirecting to info page if searched planet is found
     if (searchData.length > 0) {
       const planetName = searchData[0].name;
       const planetId = searchData[0].id;
       const url = `/pages/info.html?planet=${planetName}&number=${planetId}`;
       window.location.href = url;
+      // Handling the error message if planet not found
     } else {
-    // Search not found
-    alert("ingen planet hittad");
+      alert("ingen planet hittad");
     }
+    // Handling errors if needed
   } catch (error) {
     console.error("Error fetching data:", error);
   }
@@ -56,9 +63,10 @@ document.addEventListener("click", function closeSuggestions(event) {
   }
 });
 
-// Show suggestions when writing in the inputfield
+// Filtering the planet list based on search input
 searchInput.addEventListener("input", searchPlanetList);
 
+// Function to filter the planet list bades on search input
 function searchPlanetList() {
   let input, filter, ul, li, a, i, txtValue;
   input = searchInput;

@@ -1,13 +1,16 @@
 // Imports the data from the API
 import { getData } from "../modules/api.js";
+
 // imports the search function and planet list
 import { searchFunction, searchPlanetList } from "../modules/search.js";
 
+// Getting a button element by its ID in info.html
 const backBtn = document.getElementById("header__go-back");
 
+// Creating a event listener to go back to main page when clicked
 backBtn.addEventListener("click", () => {
-  window.location.href = "/pages/index.html"
-})
+  window.location.href = "/pages/index.html";
+});
 
 // Get all the elements that will show information
 let infoContainer = {

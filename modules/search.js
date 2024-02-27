@@ -6,6 +6,9 @@ const searchInput = document.getElementById("search-field__input");
 const searchSuggestions = document.getElementById("search-container__list");
 const button = document.getElementById("search-field__button");
 
+// Creating a variable for the error message when search input doesnt exist.
+const errorMessage = document.querySelector(".search-container__error-message");
+
 // Search function to get data from search input
 const searchFunction = async () => {
   try {
@@ -28,7 +31,7 @@ const searchFunction = async () => {
       window.location.href = url;
       // Handling the error message if planet not found
     } else {
-      alert("ingen planet hittad");
+      errorMessage.innerHTML = "Hoppsan! Den planeten verkar ha gömt sig för oss. Testa en annan!";
     }
     // Handling errors if needed
   } catch (error) {

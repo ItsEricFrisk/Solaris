@@ -30,7 +30,7 @@ body {
   color: var(--primary-font-color);
   background: linear-gradient(to bottom, #020202, #06264e);
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
 }
 
 /* styling the "Tillbaka" button */

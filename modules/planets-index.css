@@ -1,0 +1,104 @@
+/* Main index-html*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  
+  /* Select a planet for information */
+  .main__select-planet {
+    font-size: 2rem;
+    margin: 0 0 80px 0;
+  }
+  
+  /* Styling for the hero content 
+   Three planets that rotates
+  */
+  .main__hero-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+  }
+  
+  .hero-container__planet {
+    border-radius: 50%;
+    cursor: pointer;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  /* Animation while hovering */
+  .hero-container__planet-animation:hover {
+    animation: rotate 4s linear 0s infinite normal;
+  }
+  
+  .hero-container__planet-sun {
+    background: radial-gradient(circle at 50% 50%, #d5ff02, #fcb211 40%, #fdac14 80%);
+    filter: drop-shadow(0px 0px 8px #f2be03);
+    width: 120px;
+    height: 120px;
+  }
+  
+  .hero-container__planet-jupiter {
+    background: radial-gradient(circle at 20% 45%, #d38e60, #805030 40%, #000000 80%);
+    width: 115px;
+    height: 115px;
+  }
+  
+  .hero-container__planet-saturnus {
+    background: radial-gradient(circle at 20% 45%, #e4dc89, #7a7407 40%, #000000 80%);
+    width: 110px;
+    height: 110px;
+  }
+  
+  .hero-container__planet-uranus {
+    background: radial-gradient(circle at 20% 45%, #1fd5f5, #0a78c1 40%, #000000 80%);
+    width: 105px;
+    height: 105px;
+  }
+  
+  .hero-container__planet-neptunus {
+    background: radial-gradient(circle at 20% 45%, #125cfd, #002c8b 40%, #000000 80%);
+    width: 100px;
+    height: 100px;
+  }
+  
+  .hero-container__planet-earth {
+    background: radial-gradient(circle at 20% 45%, #077ee6, #034279 40%, #000000 80%);
+    width: 90px;
+    height: 90px;
+  }
+  
+  .hero-container__planet-venus {
+    background: radial-gradient(circle at 20% 45%, #e77c09, #794207 40%, #000000 80%);
+    width: 80px;
+    height: 80px;
+  }
+  
+  .hero-container__planet-mars {
+    background: radial-gradient(circle at 20% 45%, #ce581d, #6e3006 40%, #000000 80%);
+    width: 70px;
+    height: 70px;
+  }
+  
+  .hero-container__planet-merkurius {
+    background: radial-gradient(circle at 20% 45%, #a0a0ad, #414141 40%, #000000 80%);
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Animation on the planet.
+  The planet rotates */
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }

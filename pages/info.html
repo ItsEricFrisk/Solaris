@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/info.css" />
+    <script type="module" src="/script/info.js" defer></script>
+    <title>Solaris | Eric Frisk</title>
+  </head>
+
+  <body>
+    <header>
+      <button id="header__go-back">Tillbaka</button>
+      <h2 class="header__solaris">Solaris</h2>
+      <h1 class="header__title">Solsystemet</h1>
+    </header>
+    <main>
+      <section class="main__search-container">
+        <section class="search-container__search-field">
+          <input
+            type="text"
+            name="search"
+            id="search-field__input"
+            placeholder="Sök"
+            title="Sök efter en planet"
+          />
+          <button id="search-field__button">
+            <div class="button__circle"></div>
+            <div class="button__arrow"></div>
+          </button>
+        </section>
+        <ul id="search-container__list">
+          <li>
+            <a href="/pages/info.html?planet=jupiter&number=5">Jupiter</a>
+          </li>
+          <li><a href="/pages/info.html?planet=sun&number=0">Solen</a></li>
+          <li>
+            <a href="/pages/info.html?planet=saturnus&number=6">Saturnus</a>
+          </li>
+          <li><a href="/pages/info.html?planet=uranus&number=7">Uranus</a></li>
+          <li>
+            <a href="/pages/info.html?planet=neptunus&number=8">Neptunus</a>
+          </li>
+          <li><a href="/pages/info.html?planet=earth&number=3">Jorden</a></li>
+          <li><a href="/pages/info.html?planet=venus&number=2">Venus</a></li>
+          <li><a href="/pages/info.html?planet=mars&number=4">Mars</a></li>
+          <li>
+            <a href="/pages/info.html?planet=merkurius&number=1">Merkurius</a>
+          </li>
+        </ul>
+      </section>
+      <section class="main__info">
+        <section class="info__planet">
+          <h3 id="info__planet-name"></h3>
+          <h4 id="info__planet-latin-name"></h4>
+        </section>
+        <section class="info__about-planet">
+          <p id="info__description"></p>
+        </section>
+        <section class="info__info-container">
+          <section class="info-container__distance info-container__boxes">
+            <p class="boxes__title">Distans från solen</p>
+            <p id="distance__info"></p>
+          </section>
+          <section class="info-container__temp info-container__boxes">
+            <p class="boxes__title">Tempratur dagtid</p>
+            <p id="temp__info"></p>
+          </section>
+          <section class="info-container__circumference info-container__boxes">
+            <p class="boxes__title">Omkrets i KM</p>
+            <p id="circumference__info"></p>
+          </section>
+          <section class="info-container__rotation info-container__boxes">
+            <p class="boxes__title">Dygn/antal jorddygn</p>
+            <p id="rotation__info"></p>
+          </section>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

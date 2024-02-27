@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <script type="module" src="/script/index.js" defer></script>
+    <title>Solaris | Eric Frisk</title>
+  </head>
+
+  <body>
+    <header>
+      <h2 class="header__solaris">Solaris</h2>
+      <h1 class="header__title">Solsystemet</h1>
+    </header>
+    <main>
+      <section class="main__search-container">
+        <section class="search-container__search-field">
+          <input
+            type="text" 
+            name="search"
+            id="search-field__input"
+            placeholder="Sök"
+            title="Sök efter en planet"
+          />
+          <button id="search-field__button">
+            <div class="button__circle"></div>
+            <div class="button__arrow"></div>
+          </button>
+        </section>
+        <ul id="search-container__list">
+          <li>
+            <a href="/pages/info.html?planet=jupiter&number=5">Jupiter</a>
+          </li>
+          <li><a href="/pages/info.html?planet=sun&number=0">Solen</a></li>
+          <li>
+            <a href="/pages/info.html?planet=saturnus&number=6">Saturnus</a>
+          </li>
+          <li><a href="/pages/info.html?planet=uranus&number=7">Uranus</a></li>
+          <li>
+            <a href="/pages/info.html?planet=neptunus&number=8">Neptunus</a>
+          </li>
+          <li><a href="/pages/info.html?planet=earth&number=3">Jorden</a></li>
+          <li><a href="/pages/info.html?planet=venus&number=2">Venus</a></li>
+          <li><a href="/pages/info.html?planet=mars&number=4">Mars</a></li>
+          <li>
+            <a href="/pages/info.html?planet=merkurius&number=1">Merkurius</a>
+          </li>
+        </ul>
+      </section>
+      <h3 class="main__select-planet">Välj en planet</h3>
+      <section class="main__hero-container">
+        <div
+          class="hero-container__planet hero-container__planet-sun"
+          data-planet="sun"
+          data-number="0"
+        ></div>
+        <div
+          class="hero-container__planet hero-container__planet-jupiter hero-container__planet-animation"
+          data-planet="jupiter"
+          data-number="5"
+        ></div>
+        <div
+          class="hero-container__planet hero-container__planet-saturnus hero-container__planet-animation"
+          data-planet="saturnus"
+          data-number="6"
+        ></div>
+        <div
+          class="hero-container__planet hero-container__planet-uranus hero-container__planet-animation"
+          data-planet="uranus"
+          data-number="7"
+        ></div>
+        <div
+          class="hero-container__planet hero-container__planet-neptunus hero-container__planet-animation"
+          data-planet="neptunus"
+          data-number="8"
+        ></div>
+        <div
+          class="hero-container__planet hero-container__planet-earth hero-container__planet-animation"
+          data-planet="earth"
+          data-number="3"
+        ></div>
+        <div
+          class="hero-container__planet hero-container__planet-venus hero-container__planet-animation"
+          data-planet="venus"
+          data-number="2"
+        ></div>
+        <div
+          class="hero-container__planet hero-container__planet-mars hero-container__planet-animation"
+          data-planet="mars"
+          data-number="4"
+        ></div>
+        <div
+          class="hero-container__planet hero-container__planet-merkurius hero-container__planet-animation"
+          data-planet="merkurius"
+          data-number="1"
+        ></div>
+      </section>
+    </main>
+  </body>
+</html>

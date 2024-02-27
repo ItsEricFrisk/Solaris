@@ -1,0 +1,56 @@
+/* Styling for the header */
+@import "/modules/header.css";
+/* The styling for search-bar */
+@import "/modules/searchbar.css";
+/* Styling the information about the planets */
+@import "/modules/planet-info.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colors */
+:root {
+  --primary-font-color: #fff;
+  --secondary-font-color: #ffd029;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "anta";
+  font-weight: normal;
+  src: url(/fonts/Anta/Anta-Regular.ttf);
+}
+
+/* Body */
+body {
+  font-family: "anta";
+  color: var(--primary-font-color);
+  background: linear-gradient(to bottom, #020202, #06264e);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* "Tillbaka" button */
+#header__go-back {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+  color: var(--primary-font-color);
+  font-family: "anta";
+  font-size: 1.1rem;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+#header__go-back:hover {
+  background-color: #141414;
+  color: var(--secondary-font-color);
+  border: 2px solid var(--secondary-font-color);
+}

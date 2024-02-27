@@ -6,12 +6,14 @@ header {
     justify-content: space-around;
   }
   
+  /* h2: Text phrase: Solaris */
   .header__solaris {
     font-size: 2rem;
     margin: 0 0 20px 0;
     color: var(--secondary-font-color);
   }
   
+  /* h1: Text phrase Solsystemet */
   .header__title {
     font-size: 3rem;
   }

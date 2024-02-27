@@ -6,7 +6,7 @@ main {
     justify-content: space-between;
   }
   
-  /* styling the info section. Here the info about the planet begins */
+  /* styling the info section. Info about the planet begins here */
   .main__info {
     width: 85%;
     padding: 20px;
@@ -19,24 +19,26 @@ main {
     justify-content: space-between;
   }
   
-  /* Title of the planet */
+  /* Title-container for the planet */
   .info__planet {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
+  /* Planets name */
   #info__planet-name {
     font-size: 3rem;
     color: var(--secondary-font-color);
   }
   
+  /* Planets latin name */
   #info__planet-latin-name {
     font-size: 2rem;
     margin: 10px 0;
   }
   
-  /* Description about the planet */
+  /* Information-container about the planet */
   .info__about-planet {
     width: 100%;
     display: flex;
@@ -47,13 +49,14 @@ main {
     border-bottom: 1px solid #fff;
   }
   
+  /* Information about the planet */
   #info__description {
     width: 100%;
     text-align: center;
     letter-spacing: 2px;
   }
   
-  /* The smaller description sections. Using grid */
+  /* container for smaller information sections */
   .info__info-container {
     width: 100%;
     display: grid;
@@ -64,6 +67,7 @@ main {
     border-bottom: 1px solid #fff;
   }
   
+  /* styling on the small information sections */
   .info-container__boxes {
     width: 300px;
     justify-self: center;
@@ -72,6 +76,7 @@ main {
     font-size: 1.5rem;
   }
   
+  /* Title of every section */
   .boxes__title {
     margin: 10px 0;
   }

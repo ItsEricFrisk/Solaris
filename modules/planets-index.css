@@ -1,4 +1,4 @@
-/* Main index-html*/
+/* Main index.html*/
 main {
     display: flex;
     flex-direction: column;
@@ -7,15 +7,13 @@ main {
     height: 80vh;
   }
   
-  /* Select a planet for information */
+  /* h3: text phrase: Välj en planet */
   .main__select-planet {
     font-size: 2rem;
     margin: 0 0 80px 0;
   }
   
-  /* Styling for the hero content 
-   Three planets that rotates
-  */
+  /* parent-container for the planets */
   .main__hero-container {
     display: flex;
     justify-content: space-evenly;
@@ -23,6 +21,7 @@ main {
     width: 90%;
   }
   
+  /* general styling of the planets */
   .hero-container__planet {
     border-radius: 50%;
     cursor: pointer;
@@ -30,11 +29,12 @@ main {
     align-self: center;
   }
   
-  /* Animation while hovering */
+  /* Animation while hovering on the planets */
   .hero-container__planet-animation:hover {
     animation: rotate 4s linear 0s infinite normal;
   }
   
+  /* background-color, shadow and size for the planets*/
   .hero-container__planet-sun {
     background: radial-gradient(circle at 50% 50%, #d5ff02, #fcb211 40%, #fdac14 80%);
     filter: drop-shadow(0px 0px 8px #f2be03);
@@ -47,7 +47,7 @@ main {
     width: 115px;
     height: 115px;
   }
-  
+
   .hero-container__planet-saturnus {
     background: radial-gradient(circle at 20% 45%, #e4dc89, #7a7407 40%, #000000 80%);
     width: 110px;
@@ -90,9 +90,7 @@ main {
     height: 60px;
   }
   
-  /* Animation on the planet.
-  The planet rotates */
-  
+  /* Animation for the planets. They rotate when you hover over them */
   @keyframes rotate {
     from {
       transform: rotate(0deg);

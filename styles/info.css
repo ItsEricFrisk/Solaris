@@ -33,7 +33,7 @@ body {
   height: 100vh;
 }
 
-/* "Tillbaka" button */
+/* styling the "Tillbaka" button */
 #header__go-back {
   position: absolute;
   top: 50px;

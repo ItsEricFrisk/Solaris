@@ -1,3 +1,5 @@
+// This module is for the search functions.
+
 // Imports the data from the API
 import { getData } from "../modules/api.js";
 

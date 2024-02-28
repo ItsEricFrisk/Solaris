@@ -1,3 +1,5 @@
+// This module first fetches the api key and then the api data
+
 //  Url to fetch the API key
 const keyUrl = "https://n5n3eiyjb0.execute-api.eu-north-1.amazonaws.com/keys";
 

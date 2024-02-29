@@ -54,3 +54,11 @@ body {
   color: var(--secondary-font-color);
   border: 2px solid var(--secondary-font-color);
 }
+
+
+/* Changes height if screen is bigger than 800px */
+@media (min-height: 800px) {
+  body {
+    height: 100vh;
+  }
+}

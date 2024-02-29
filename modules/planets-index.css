@@ -45,43 +45,43 @@ main {
   }
   
   .hero-container__planet-jupiter {
-    background: radial-gradient(circle at 20% 45%, #d38e60, #805030 40%, #000000 80%);
+    background: radial-gradient(circle at 20% 45%, #ff6b01, #ed6706, #e2640b, #d05509, #bd4b05 30%, #0f0a02 70%);
     width: 115px;
     height: 115px;
   }
 
   .hero-container__planet-saturnus {
-    background: radial-gradient(circle at 20% 45%, #e4dc89, #7a7407 40%, #000000 80%);
+    background: radial-gradient(circle at 20% 45%, #9f8932, #7e6709, #584807 40%, #0f0f00 70%);
     width: 110px;
     height: 110px;
   }
   
   .hero-container__planet-uranus {
-    background: radial-gradient(circle at 20% 45%, #1fd5f5, #0a78c1 40%, #000000 80%);
+    background: radial-gradient(circle at 20% 45%, #058ce7, #0985d7, #0b76be, #075e98 40%, #000000 80%);
     width: 105px;
     height: 105px;
   }
   
   .hero-container__planet-neptunus {
-    background: radial-gradient(circle at 20% 45%, #125cfd, #002c8b 40%, #000000 80%);
+    background: radial-gradient(circle at 20% 45%,  #0c6dae, #063c60 40%, #000000 80%);
     width: 100px;
     height: 100px;
   }
   
   .hero-container__planet-earth {
-    background: radial-gradient(circle at 20% 45%, #077ee6, #034279 40%, #000000 80%);
+    background: radial-gradient(circle at 20% 45%, #275cd6, #1651db, #0a379f 40%, #000000 80%);
     width: 90px;
     height: 90px;
   }
   
   .hero-container__planet-venus {
-    background: radial-gradient(circle at 20% 45%, #e77c09, #794207 40%, #000000 80%);
+    background: radial-gradient(circle at 20% 45%, #c9ae91, #b98f63, #9f7951, #7d5d3c 40%, #000000 80%);
     width: 80px;
     height: 80px;
   }
   
   .hero-container__planet-mars {
-    background: radial-gradient(circle at 20% 45%, #ce581d, #6e3006 40%, #000000 80%);
+    background: radial-gradient(circle at 10% 45%, #b12107, #ab2007, #8d1904, #631507 40%, #000000 80%);
     width: 70px;
     height: 70px;
   }

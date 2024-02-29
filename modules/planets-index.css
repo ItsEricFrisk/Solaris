@@ -38,7 +38,7 @@ main {
   
   /* background-color, shadow and size for the planets*/
   .hero-container__planet-sun {
-    background: radial-gradient(circle at 50% 50%, #d5ff02, #fcb211 40%, #fdac14 80%);
+    background: radial-gradient(circle at 50% 50%, #f1de04, #e8d507 10%, #f74f02 100%);
     filter: drop-shadow(0px 0px 8px #f2be03);
     width: 120px;
     height: 120px;
